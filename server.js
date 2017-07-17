@@ -10,6 +10,12 @@ const dbname = "albums";
 //const urldb = `mongodb://localhost:27017/${dbname}`;
 const urldb=`mongodb://root:root@ds161042.mlab.com:61042/${dbname}`;
 
+
+app.get('/', function(req, res) {
+   res.status(200).json({msg : "ok"});
+ });
+
+
 mongoose.connect(urldb, (err,res) =>{
   if (err) {
     console.log(`error al conectarse a la bd ${err}`);

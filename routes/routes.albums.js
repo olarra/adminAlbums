@@ -13,9 +13,6 @@ api.put("/album/:id",albumCtrl.updateAlbum);
 api.delete("/album/:id",albumCtrl.deleteAlbum);
 
 
- api.get('/', function(req, res) {
-    	res.status(200).send(msg : "ok");
-    });
 
 
 module.exports = api;
