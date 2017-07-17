@@ -7,8 +7,8 @@ mongoose.Promise = require('bluebird');    //  + Warning about promises
 const app = require('./config/app');       //  + Expresse configuration
 const port = process.env.PORT || 3700;
 const dbname = "albums";
-const urldb = `mongodb://localhost:27017/${dbname}`;
-//const urldb=`mongodb://root:root@ds161042.mlab.com:61042/${dbname}`;
+//const urldb = `mongodb://localhost:27017/${dbname}`;
+const urldb=`mongodb://root:root@ds161042.mlab.com:61042/${dbname}`;
 
 mongoose.connect(urldb, (err,res) =>{
   if (err) {
