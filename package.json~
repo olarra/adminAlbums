@@ -1,0 +1,22 @@
+{
+  "name": "api-restful-favoritos",
+  "version": "1.0.0",
+  "description": "Proyecto de API RESTFUL ALBUMS",
+  "main": "server.js",
+  "scripts": {
+    "start" : "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesus GARNICA OLARRA <horus_hades@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "bluebird": "~3.5.0",
+    "mongoose": "4.8.1",
+    "connect-multiparty" : "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
