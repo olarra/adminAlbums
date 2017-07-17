@@ -13,9 +13,5 @@ api.put("/album/:id",albumCtrl.updateAlbum);
 api.delete("/album/:id",albumCtrl.deleteAlbum);
 
 
- api.get('*', function(req, res) {
-    	res.sendfile('./app_client/index.html'); // Carga única de la vista
-    });
-
 
 module.exports = api;

@@ -13,11 +13,9 @@ api.put("/album/:id",albumCtrl.updateAlbum);
 api.delete("/album/:id",albumCtrl.deleteAlbum);
 
 
-api.get("/", (req, res) => {
-  res.status(200).send({
-    sucess : true,
-    message : `API Running...`});
-  });
+ api.get('*', function(req, res) {
+    	res.sendfile('./app_client/index.html'); // Carga única de la vista
+    });
 
 
 module.exports = api;
